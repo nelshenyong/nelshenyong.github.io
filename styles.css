@@ -114,15 +114,17 @@ body {
 
 /* Navigation */
 .navbar {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    z-index: 1000;
+    z-index: 9998 !important;
     padding: 1rem 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .navbar.scrolled {
@@ -166,6 +168,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .logo {
@@ -233,6 +237,10 @@ body {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    position: relative;
+    z-index: 9999;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .hamburger span {
@@ -254,6 +262,7 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 0;
+    isolation: isolate;
 }
 
 .hero::before {
@@ -1506,7 +1515,9 @@ body {
     }
 
     .hamburger {
-        display: flex;
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
     .nav-menu {
