@@ -17,6 +17,11 @@
 
 html {
     scroll-behavior: smooth;
+    position: relative;
+}
+
+html, body {
+    position: relative;
 }
 
 /* Custom Scrollbar - Elegant Design */
@@ -248,6 +253,7 @@ body {
     background: linear-gradient(135deg, var(--white) 0%, var(--gray-lighter) 100%);
     position: relative;
     overflow: hidden;
+    z-index: 0;
 }
 
 .hero::before {
@@ -1233,11 +1239,14 @@ body {
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    z-index: 9999 !important;
+    z-index: 99999 !important;
     transition: var(--transition);
     color: var(--white);
     visibility: visible !important;
     opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .wa-float-btn i {
