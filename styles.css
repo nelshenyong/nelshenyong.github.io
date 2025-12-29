@@ -1221,21 +1221,23 @@ body {
 
 /* WhatsApp Floating Button */
 .wa-float-btn {
-    position: fixed;
+    position: fixed !important;
     bottom: 30px;
     right: 30px;
     width: 60px;
     height: 60px;
     background-color: #25D366;
     border-radius: 50%;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    z-index: 1000;
+    z-index: 9999 !important;
     transition: var(--transition);
     color: var(--white);
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .wa-float-btn i {
