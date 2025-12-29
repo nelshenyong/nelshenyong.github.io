@@ -70,6 +70,7 @@ body {
     color: var(--black);
     line-height: 1.6;
     overflow-x: hidden;
+    position: relative;
 }
 
 /* Scroll Animation Classes */
@@ -262,7 +263,6 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 0;
-    isolation: isolate;
 }
 
 .hero::before {
@@ -1545,6 +1545,10 @@ body {
         font-size: 1.2rem;
     }
 
+    .hero {
+        overflow: visible;
+    }
+
     .featured-slider {
         padding: 40px 0;
     }
@@ -1702,6 +1706,10 @@ body {
     .hero-profile-image {
         width: 150px;
         height: 150px;
+    }
+
+    .hero {
+        overflow: visible;
     }
 
     .gallery-grid {
