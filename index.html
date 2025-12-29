@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- SEO Dasar -->
+    <title>Nelshen Yong | Professional Photographer & Videographer</title>
+    <meta
+      name="description"
+      content="Portfolio Nelshen Yong - Jasa Fotografer dan Videografer profesional spesialis Event Documentation, Portrait Photography, dan Creative Projects di Palembang"
+    />
+    <meta
+      name="keywords"
+      content="Nelshen Yong, Fotografer Palembang, Videografer Profesional, Portfolio Fotografi, Cinematic Video, Videografer Palembang"
+    />
+    <meta name="author" content="Nelshen Yong" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (Agar tampil keren saat link dibagikan di WA/IG/FB) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Nelshen Yong | Photographer & Videographer"
+    />
+    <meta
+      property="og:description"
+      content="Lihat karya visual terbaik dari Nelshen Yong. Klik untuk melihat portfolio terbaru."
+    />
+    <meta property="og:image" content="nelshenyong.github.io" />
+    <!-- Ganti dengan URL foto terbaik Anda -->
+    <meta property="og:url" content="https://nelshenyong.github.io" />
+
+    <!-- Google Fonts (Agar Tipografi terlihat lebih pro/mahal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="fonts.googleapis.com" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" id="favicon" href="" type="image/svg+xml" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <button
+          class="navbar-back-btn"
+          id="navbarBackBtn"
+          style="display: none"
+        >
+          <i class="bx bx-arrow-back"></i>
+        </button>
+        <div class="logo">
+          <span class="logo-icon" id="logoIcon"></span>
+          <span class="logo-text">Nelshen Yong</span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-profile-image" id="heroProfileImage"></div>
+        <h1 class="hero-title" id="heroName">Nelshen Yong</h1>
+        <p class="hero-subtitle" id="heroTitle">Photographer & Videographer</p>
+        <a href="#gallery" class="cta-button">View My Work</a>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Featured Slider -->
+    <section class="featured-slider">
+      <div class="slider-container" id="featuredSlider">
+        <button class="slider-btn prev" id="prevFeatured">
+          <i class="bx bx-chevron-left"></i>
+        </button>
+        <div class="slider-wrapper" id="featuredWrapper"></div>
+        <button class="slider-btn next" id="nextFeatured">
+          <i class="bx bx-chevron-right"></i>
+        </button>
+      </div>
+      <div class="slider-dots" id="featuredDots"></div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <h2 class="section-title" id="galleryTitle">My Work</h2>
+        <div class="category-filters" id="categoryFilters"></div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+
+        <!-- Folder Detail View -->
+        <div
+          class="folder-detail-view"
+          id="folderDetailView"
+          style="display: none"
+        >
+          <button
+            class="folder-back-btn folder-back-btn-desktop"
+            id="folderBackBtn"
+          >
+            <i class="bx bx-arrow-back"></i>
+            <span id="folderBackText">Kembali ke Gallery</span>
+          </button>
+          <h3 class="folder-detail-title" id="folderDetailTitle"></h3>
+          <p class="folder-detail-description" id="folderDetailDescription"></p>
+          <button
+            class="folder-back-btn folder-back-btn-mobile"
+            id="folderBackBtnMobile"
+          >
+            <i class="bx bx-arrow-back"></i>
+            <span id="folderBackTextMobile">Kembali ke Gallery</span>
+          </button>
+          <div class="folder-items-grid" id="folderItemsGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <h2 class="section-title" id="aboutTitle">About Me</h2>
+          <p class="about-text" id="aboutText"></p>
+          <div class="about-details" id="aboutDetails"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title" id="contactTitle">Get In Touch</h2>
+        <div class="contact-content" id="contactContent"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="currentYear"></span> Nelshen Yong. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose">
+        <i class="bx bx-x"></i>
+      </button>
+      <button class="lightbox-prev" id="lightboxPrev">
+        <i class="bx bx-chevron-left"></i>
+      </button>
+      <button class="lightbox-next" id="lightboxNext">
+        <i class="bx bx-chevron-right"></i>
+      </button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="wa-float-btn" id="waFloatBtn">
+      <i class="bx bxl-whatsapp"></i>
+    </div>
+
+    <!-- WhatsApp Chat Modal -->
+    <div class="wa-chat-modal" id="waChatModal">
+      <div class="wa-chat-container">
+        <div class="wa-chat-header">
+          <div class="wa-chat-header-info">
+            <div class="wa-chat-avatar" id="waChatAvatar"></div>
+            <div>
+              <h3 id="waChatName">Nelshen Yong</h3>
+              <p class="wa-chat-status" id="waStatus">Online</p>
+            </div>
+          </div>
+          <button class="wa-chat-close" id="waChatClose">&times;</button>
+        </div>
+        <div class="wa-chat-messages" id="waChatMessages">
+          <div class="wa-message wa-message-received">
+            <div class="wa-message-content">
+              <p id="waGreeting">Halo! Apa yang perlu dibantu?</p>
+            </div>
+            <span class="wa-message-time">Sekarang</span>
+          </div>
+        </div>
+        <div class="wa-chat-input-container">
+          <input
+            type="text"
+            class="wa-chat-input"
+            id="waChatInput"
+            placeholder=""
+            id="waInputPlaceholder"
+          />
+          <button class="wa-chat-send" id="waChatSend">
+            <i class="bx bxs-send"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

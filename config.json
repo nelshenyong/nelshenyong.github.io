@@ -1,0 +1,200 @@
+{
+  "profile": {
+    "name": "Nelshen Yong",
+    "title": "Photographer & Videographer",
+    "bio": "Passionate visual storyteller capturing moments through photography and videography. Specialized in documenting events, portraits, and creative projects.",
+    "email": "nelshenyong@gmail.com",
+    "instagram": "@nelshen.yong",
+    "location": "Palembang, South Sumatera",
+    "photo": "https://drive.google.com/file/d/15XQe1WkTfcZcsPaWezzf42067wQ4cfW4/preview",
+    "whatsapp": "6281273462705",
+    "useInstagramAPI": false,
+    "instagramAPI": {
+      "accessToken": "",
+      "userId": "",
+      "username": "nelshen.yong"
+    }
+  },
+  "texts": {
+    "ctaButton": "View My Work",
+    "sectionTitles": {
+      "gallery": "My Work",
+      "about": "About Me",
+      "contact": "Get In Touch"
+    },
+    "aboutLabels": {
+      "location": "Location",
+      "email": "Email",
+      "instagram": "Instagram"
+    },
+    "whatsapp": {
+      "greeting": "Halo! Apa yang perlu dibantu?",
+      "placeholder": "Ketik pesan",
+      "status": "Online",
+      "timeLabel": "Sekarang",
+      "photo": "",
+      "name": "Nelshen Yong [Auto Text]"
+    },
+    "emptyState": {
+      "title": "Tidak ada konten",
+      "message": "Kategori ini belum memiliki konten. Silakan pilih kategori lain."
+    },
+    "dateFormat": {
+      "display": "DD MMMM YYYY",
+      "locale": "id-ID"
+    },
+    "sortOptions": {
+      "newest": "Terbaru",
+      "oldest": "Terlama"
+    },
+    "folderLabels": {
+      "items": "item",
+      "backToGallery": "Kembali ke Gallery"
+    },
+    "favicon": {
+      "useIcon": true,
+      "iconType": "boxicon",
+      "icon": "bx bx-camera",
+      "text": "NY",
+      "backgroundColor": "#000000",
+      "textColor": "#ffffff"
+    }
+  },
+  "socialMedia": [
+    {
+      "name": "Email",
+      "icon": "bx bx-envelope",
+      "url": "mailto:nelshenyong@gmail.com",
+      "text": "nelshenyong@gmail.com"
+    },
+    {
+      "name": "Instagram",
+      "icon": "bx bxl-instagram",
+      "url": "https://instagram.com/nelshen.yong",
+      "text": "@nelshen.yong"
+    },
+    {
+      "name": "WhatsApp",
+      "icon": "bx bxl-whatsapp",
+      "url": "https://wa.me/6281273462705",
+      "text": "+62 812-7346-2705"
+    }
+  ],
+  "categories": [
+    {
+      "id": "portrait",
+      "name": "Portrait Photography",
+      "description": "Capturing the essence of individuals through portrait photography",
+      "media": [
+        {
+          "type": "folder",
+          "id": "portrait-session-1",
+          "title": "Portrait Session 2025",
+          "description": "Professional portrait sessions collection",
+          "date": "2025-08-15",
+          "items": [
+            {
+              "type": "image",
+              "src": "https://drive.google.com/file/d/1NGMz1g2bJaSB2qy9yWhaJf0uA2_ouLpq/preview",
+              "title": "Portrait 1",
+              "description": "Professional portrait session"
+            },
+            {
+              "type": "image",
+              "src": "https://drive.google.com/file/d/1Q0EPt6ni2p9se1FnZffYAJIVVzXPOwXp/preview",
+              "title": "Portrait 2",
+              "description": "Natural light portrait"
+            },
+            {
+              "type": "image",
+              "src": "https://drive.google.com/file/d/198Kjnv4EpV13E4fUdxthzCmthrPfCQ-C/preview",
+              "title": "Portrait 3",
+              "description": "Studio portrait"
+            },
+            {
+              "type": "image",
+              "src": "https://drive.google.com/file/d/1FQrGyDpzZF48dw-h-QzOqD7ZJ-IZwQF4/preview",
+              "title": "Portrait 4",
+              "description": "Professional portrait"
+            },
+            {
+              "type": "image",
+              "src": "https://drive.google.com/file/d/1OGK4RqTavwwzJAXNo8ZiUMyTDtFAf9hZ/preview",
+              "title": "Portrait 5",
+              "description": "Professional portrait"
+            },
+            {
+              "type": "image",
+              "src": "https://drive.google.com/file/d/1jhVkM8sXPzqirktO5V2Y4h6SIU9wOf_c/preview",
+              "title": "Portrait 5",
+              "description": "Natural light portrait"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "event",
+      "name": "Event Documentation",
+      "description": "Documenting special moments and events",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://drive.google.com/file/d/1EBakeuW_j3AOk27BVFzAMD8UIQptnTsl/preview",
+          "title": "Kellen's Sweet Seventeen - Highlight Video",
+          "description": "Birthday Party Highlight",
+          "thumbnail": "",
+          "date": "2025-12-07"
+        },
+        {
+          "type": "video",
+          "src": "https://drive.google.com/file/d/1UdkYXJuT54lva3LshDYJ_5mFxIwo40nQ/preview",
+          "title": "Eagle Color Run - Event Video",
+          "description": "Running Event Highlights",
+          "thumbnail": "",
+          "date": "2025-11-09"
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "name": "Creative Projects",
+      "description": "Artistic and creative visual projects",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://drive.google.com/file/d/1J7xRB7-dWZtFbNx_WP1CYcxIoya67esC/preview",
+          "title": "Chilling at Omah Kopi - Highlight Video",
+          "description": "Short Highlight Video",
+          "date": "2025-08-11"
+        }
+      ]
+    },
+    {
+      "id": "landscape",
+      "name": "Landscape Photography",
+      "description": "Capturing the beauty of nature and landscapes",
+      "media": []
+    }
+  ],
+  "featured": [
+    {
+      "type": "image",
+      "src": "https://drive.google.com/file/d/1wu89-Iy1vsKwsKuppnc8h8Fy6LejWORt/preview",
+      "title": "Coming Soon",
+      "description": "Coming Soon"
+    },
+    {
+      "type": "image",
+      "src": "https://drive.google.com/file/d/1wu89-Iy1vsKwsKuppnc8h8Fy6LejWORt/preview",
+      "title": "Coming Soon",
+      "description": "Coming Soon"
+    },
+    {
+      "type": "image",
+      "src": "https://drive.google.com/file/d/1wu89-Iy1vsKwsKuppnc8h8Fy6LejWORt/preview",
+      "title": "Coming Soon",
+      "description": "Coming Soon"
+    }
+  ]
+}

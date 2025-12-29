@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="404 - Halaman Tidak Ditemukan" />
+    <title>404 - Page Not Found | Nelshen Yong</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .error-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          135deg,
+          var(--white) 0%,
+          var(--gray-lighter) 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      .error-page::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 10px,
+          rgba(0, 0, 0, 0.02) 10px,
+          rgba(0, 0, 0, 0.02) 20px
+        );
+        pointer-events: none;
+      }
+
+      .error-content {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        padding: 40px;
+        max-width: 600px;
+      }
+
+      .error-code {
+        font-size: 8rem;
+        font-weight: 300;
+        letter-spacing: 10px;
+        color: var(--black);
+        margin-bottom: 20px;
+        line-height: 1;
+      }
+
+      .error-icon {
+        font-size: 6rem;
+        color: var(--gray-medium);
+        margin-bottom: 30px;
+        display: block;
+      }
+
+      .error-title {
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 3px;
+        color: var(--black);
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+
+      .error-message {
+        font-size: 1.1rem;
+        color: var(--gray-medium);
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+
+      .error-button {
+        display: inline-block;
+        padding: 15px 40px;
+        background-color: var(--black);
+        color: var(--white);
+        text-decoration: none;
+        border: 2px solid var(--black);
+        transition: var(--transition);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+
+      .error-button:hover {
+        background-color: transparent;
+        color: var(--black);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .error-button i {
+        margin-right: 8px;
+      }
+
+      @media (max-width: 768px) {
+        .error-code {
+          font-size: 5rem;
+        }
+
+        .error-icon {
+          font-size: 4rem;
+        }
+
+        .error-title {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-page">
+      <div class="error-content">
+        <div class="error-code">404</div>
+        <i class="bx bx-error-circle error-icon"></i>
+        <h1 class="error-title">Halaman Tidak Ditemukan</h1>
+        <p class="error-message">
+          Maaf, halaman yang Anda cari tidak ditemukan. Halaman mungkin telah
+          dipindahkan atau dihapus.
+        </p>
+        <a href="/" class="error-button">
+          <i class="bx bx-home"></i>
+          Kembali ke Homepage
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

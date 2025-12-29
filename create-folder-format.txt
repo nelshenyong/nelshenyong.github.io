@@ -1,0 +1,18 @@
+{
+          "type": "folder",
+          "id": "",
+          "title": "",
+          "description": "",
+          "thumbnail": "",
+          "date": "",
+          "items": [
+            {
+              "type": "",
+              "src": "",
+              "title": "",
+              "description": "",
+              "thumbnail": "",
+              "date": "YEAR-MONTH-DAY"
+            }
+          ]
+        }
